@@ -1,26 +1,6 @@
 targetScope = 'subscription'
 
-@description('Default location for this deployment')
-param azskLocation string = 'Westeurope'
-
-@description('Prefix to be used for resource names')
-param azskprefix string = 'aszk'
-
-@description('Tags to be applied to all resources')
-param azskTags object = {
-  Deployd_by: 'Azure Starter Kit'
-}
-
-@description('Name of the Budget. It should be unique within a resource group.')
-param aszkBudgetName string = 'AzureStarterKitBudget'
-
-@description('The list of email addresses to send the budget notification to when the threshold is exceeded.')
-param azskEmailsForAlert array
-
-@description('Theemail addresses to send the alert to out of the action group.')
-param azskActionGroupEmail string
-
-@description('The total amount of cost or usage to track with the budget')
+@d
 param azskBudgetAmount int
 
 @description('The time covered by a budget. Tracking of the amount will be reset based on the time grain.')
